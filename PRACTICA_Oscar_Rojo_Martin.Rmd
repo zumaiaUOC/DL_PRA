@@ -1,0 +1,87 @@
+---
+title: 'PRA - DEEP LEARNING'
+author: "Autor: Oscar Rojo Martín"
+date: "Junio 2022"
+output:
+  pdf_document:
+    highlight: zenburn
+    toc: yes
+  word_document: default
+  html_document:
+    highlight: default
+    number_sections: yes
+    theme: cosmo
+    toc: yes
+    toc_float: true
+    toc_depth: 2
+    includes:
+      in_header: PRA-header.html
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = TRUE,
+	message = FALSE,
+	warning = FALSE
+)
+```
+
+
+
+# Limpieza y preparación entorno trabajo
+
+
+# Obtención del dataset de kaggle
+
+Lo resumo:
+
+Installation
+
+Todo ello mediante el shell/terminal de linux.
+pip install kaggle For a local user install on Linux, the default location is ~/.local/bin.
+Authentication
+
+In order to use the Kaggle’s public API, you must first authenticate using an API token. From the site header, click on your user profile picture, then on “My Account” from the dropdown menu. This will take you to your account settings at https://www.kaggle.com/account. Scroll down to the section of the page labelled API:
+
+To create a new token, click on the “Create New API Token” button. This will download a fresh authentication token onto your machine.
+
+If you are using the Kaggle CLI tool, the tool will look for this token at ~/.kaggle/kaggle.json on Linux. Hence, once you’ve downloaded the token, you should move it from your Downloads folder to this folder.
+
+
+Instalar kaggle - utilizado el terminal mediante comandos bash.
+
+
+Obtengo el dataset - utilizado el terminal mediante comandos bash.
+
+
+
+
+
+
+# Referencias:
+
+https://librovivodecienciadedatos.ai/seleccion-mejores-variables.html
+
+https://www.r-bloggers.com/computing-and-visualizing-pca-in-r/
+
+https://askubuntu.com/questions/161778/how-do-i-use-wget-curl-to-download-from-a-site-i-am-logged-into
+
+https://genomicsclass.github.io/book/pages/pca_svd.html 
+
+https://rpubs.com/Nitika/kmeans_Iris
+
+https://rpubs.com/Joaquin_AR/310338
+
+https://www.adictosaltrabajo.com/2019/11/28/deteccion-y-reemplazo-de-outliers-con-r/
+
+https://rstudio-pubs-static.s3.amazonaws.com/293405_4029f1f23f834b7195189d5504a436b2.html
+
+https://rpubs.com/Joaquin_AR/287787  
+
+https://medium.com/datos-y-ciencia/aprendizaje-no-supervisado-en-machine-learning-agrupaci%C3%B3n-bb8f25813edc
+
+https://rstudio-pubs-static.s3.amazonaws.com/222569_a8d12e00f8204a479e84a33b49e54790.html
+
+https://lmavila.github.io/markdown_files/RF_Toy.html
+
+https://www.rpubs.com/cecilialee/iris
