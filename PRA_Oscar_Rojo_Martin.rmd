@@ -23,6 +23,18 @@ output:
 
 # Introducción
 
+La enfermedad del glaucoma se caracteriza principalmente por la pérdida de las fibras del nervio óptico y de los astrocitos. Esta pérdida puede examinarse midiendo el grosor
+del borde neurorretiniano y el tamaño de la copa óptica con respecto al disco óptico.
+En general, la evaluación cualitativa de la cabeza del nervio óptico, cuando se utilizan imágenes del fondo de ojo, ha sido el principal objetivo de varios trabajos en la literatura.
+
+Trabajo que se hace basandose en el "Paper"    
+
+#### CNNs for automatic glaucoma assessment using fundus images: an extensive validation  
+
+##### Diaz‑Pinto et al. BioMed Eng OnLine           (2019) 18:29    
+
+##### https://doi.org/10.1186/s12938‑019‑0649‑y  
+
 
 # **Sección 1. Análisis Exploratorio de los datos (1,5 puntos)**
 
@@ -45,10 +57,11 @@ Se ha agrupado todo ello en un dataframe que ofrece los siguientes resultados:
           En train 7452 normal y 6338 abnormal
           En valid 819 normal y 721 abnormal
 
-De forma gráfica: 
-<img src="media/pie.png" alt="reparto entre Fold" width="200"/> 
-<img src="media/pie1.png" alt="reparto train/test/valid" width="200"/>
-<img src="media/pie2.png" alt="reparto normal/abnormal" width="200"/> 
+De forma gráfica:   
+![]("media/pie.png"){ width=35% }
+![]("media/pie1.png"){ width=35% }
+![]("media/pie2.png"){ width=35% }
+
 
 Mostramos las imágenes sin glaucoma y con glaucoma  
 Sin glaucoma:  
@@ -99,8 +112,9 @@ En todos ellos plasmamos el Summary,
     macro avg       0.76      0.76      0.76       174
     weighted avg    0.77      0.76      0.76       174
 
-<img src="media/m1_plt.png" alt="plot m1" width="400"/>
-<img src="media/m1_cv.png" alt="Confusion Matrix m1" width="200"/> 
+![]("media/m1_plt.png"){ width=70% }
+![]("media/m1_cv.png"){ width=30% }
+
 
 ## Modelo 2
 
@@ -114,8 +128,8 @@ En todos ellos plasmamos el Summary,
     macro avg      0.26      0.49      0.34       174
     weighted avg   0.28      0.52      0.36       174
 
-<img src="media/m2_plt.png" alt="plot m2" width="400"/>
-<img src="media/m2_cv.png" alt="Confusion Matrix m2" width="200"/> 
+![]("media/m2_plt.png"){ width=70% }
+![]("media/m2_cv.png"){ width=30% }
 
 ## Modelo 3
 
@@ -129,8 +143,8 @@ En todos ellos plasmamos el Summary,
     macro avg      0.53      0.52      0.50       174
     weighted avg   0.53      0.51      0.49       174
 
-<img src="media/m3_plt.png" alt="plot m3" width="400"/>
-<img src="media/m3_cv.png" alt="Confusion Matrix m3" width="200"/> 
+![]("media/m3_plt.png"){ width=70% }
+![]("media/m3_cv.png"){ width=30% }
 
 ## Modelo 4
 
@@ -144,8 +158,8 @@ En todos ellos plasmamos el Summary,
     macro avg      0.86      0.85      0.85       174
     weighted avg   0.86      0.85      0.85       174
 
-<img src="media/m4_plt.png" alt="plot m4" width="400"/>
-<img src="media/m4_cv.png" alt="Confusion Matrix m4" width="200"/> 
+![]("media/m4_plt.png"){ width=70% }
+![]("media/m4_cv.png"){ width=30% }
 
 ## Modelo 5
 
@@ -159,8 +173,8 @@ En todos ellos plasmamos el Summary,
     macro avg      0.76      0.75      0.74       174
     weighted avg   0.76      0.74      0.74       174
 
-<img src="media/m5_plt.png" alt="plot m5" width="400"/>
-<img src="media/m5_cv.png" alt="Confusion Matrix m5" width="200"/> 
+![]("media/m5_plt.png"){ width=70% }
+![]("media/m5_cv.png"){ width=30% }
 
 # **Sección 3. Validación cruzada y discusión (3 puntos)**
 
@@ -188,7 +202,7 @@ Destaco los fold 8 con una accuracy del 79%, seguido de los fold 3,4, y con un a
 
 Centrandome en el fold 8, con una Matriz de Confusión de la siguiente forma:
 
-![](media/fold8cm.png)
+![](media/fold8cm.png){ width=30% }
 
 
 
@@ -206,7 +220,8 @@ POr otro lado el uso de la función flow_from_directory carga un tren de imágen
 
 Aquí hemos visto que la distribución de las imágenes entre las 10 carpetas - ver <i>sección 3</i>- es práctimanete la misma, con la misma cantidad de imágenes de entrenamiento, de test y de validación.</b>
 
-        ii) Indicar qué puntos son importantes en el diseño de estas particiones para que los modelos resultantes tengan una buena capacidad de generalización.
+        ii) Indicar qué puntos son importantes en el diseño de estas particiones para que los 
+        modelos resultantes tengan una buena capacidad de generalización.
 
 <b>Sobre todo el reparto de las imágenes en grupos homogeneos, con el fin de evitar el colapso de los procesos de entrenamiento.</b>
 
